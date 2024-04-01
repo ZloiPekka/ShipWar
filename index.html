@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>МОРСКОЙ БОЙ</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+		<h1>МОРСКОЙ БОЙ⚓</h1>
+		<h1>Уничтожь корабли врага и набери 20 баллов!</h1>
+		<h3>"Blue" 4 корабля по 1 клет.</h3>
+		<h3>"Orange" 3 корабля по 2 клет.</h3>
+		<h3>"Brown" 2 корабля по 3 клет.</h3>
+		<h3>"Green" 1 корабль 4 клет.</h3>
+		<h1>Счёт: <span class="score">0</span></h1>
+		<h1>Попытки: <span class="attempts">40</span></h1>
+
+		<div class="d-flex">
+			<div class="col-1 px-5 py-3 text-center border">
+
+			</div>
+			<div class="col-1 px-5 py-3  bg-secondary text-center border">
+				<h4>1</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-secondary text-center border">
+				<h4>2</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-secondary text-center border">
+				<h4>3</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-secondary text-center border">
+				<h4>4</h4>
+			</div>
+			<div class="col-1 px-5  py-3 bg-secondary text-center border">
+				<h4>5</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-secondary text-center border">
+				<h4>6</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-secondary text-center border">
+				<h4>7</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-secondary text-center border">
+				<h4>8</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-secondary text-center border">
+				<h4>9</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-secondary text-center border">
+				<h4>10</h4>
+			</div>
+		</div>
+		<!--Линия А-->
+		<div class="d-flex">
+			<div class="col-1 px-5 py-4 bg-secondary text-center border">
+				<h4>A</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning brown">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+		</div>
+		<!--Линия B-->
+		<div class="d-flex">
+			<div class="col-1  px-5 py-4 bg-secondary text-center border">
+				<h4>B</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+			
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning brown">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning blue">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning orange">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning orange">
+				
+			</div>
+		</div>
+		<!--Линия C-->
+		<div class="d-flex">
+			<div class="col-1 px-5 py-4  bg-secondary text-center border">
+				<h4>C</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border border-warning red">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border border-warning red">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border border-warning brown">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border border-warning red">
+				
+			</div>	
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+		</div>
+		<!--Линия D-->
+		<div class="d-flex">
+			<div class="col-1 px-5 py-4  bg-secondary text-center border">
+				<h4>D</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning orange">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning orange">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+		</div>
+		<!--Линия E-->
+		<div class="d-flex">
+			<div class="col-1 px-5 py-4  bg-secondary text-center border">
+				<h4>E</h4>
+			</div>
+			<div class="col-1 px-5 py-4  bg border border-warning red">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border border-warning red">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border border-warning red">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border border-warning red">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning green">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+		</div>
+		<!--Линия F-->
+		<div class="d-flex">
+			<div class="col-1 px-5 py-4 bg-secondary text-center border">
+				<h4>F</h4>
+			</div>
+			<div class="col-1 px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border border-warning blue">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning green">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+		</div>
+
+		<!--Линия G-->
+		<div class="d-flex">
+			<div class="col-1 px-5 py-4 bg-secondary text-center border">
+				<h4>G</h4>
+			</div>
+			<div class="col-1 px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning green">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+		</div>
+
+		<!--Линия H-->
+		<div class="d-flex">
+			<div class="col-1 px-5 py-4 bg-secondary text-center border">
+				<h4>H</h4>
+			</div>
+			<div class="col-1 px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border border-warning brown">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning green">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning blue">
+				
+			</div>
+		</div>
+
+		<!--Линия I-->
+		<div class="d-flex">
+			<div class="col-1 px-5 py-4 bg-secondary text-center border">
+				<h4>I</h4>
+			</div>
+			<div class="col-1 px-5 py-4 bg border border-warning blue">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border border-warning brown">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border border-warning orange">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border border-warning orange">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+		</div>
+
+		<!--Линия J-->
+		<div class="d-flex">
+			<div class="col-1 px-5 py-4 bg-secondary text-center border">
+				<h4>J</h4>
+			</div>
+			<div class="col-1 px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border border-warning brown">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-warning red">
+				
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		let red = document.querySelectorAll(".red")
+		let grn = document.querySelectorAll(".green")
+		let brn = document.querySelectorAll(".brown")
+		let orn = document.querySelectorAll(".orange")
+		let blu = document.querySelectorAll(".blue")
+		let scr = document.querySelector(".score")
+		let score = 0
+		let attempts = 40
+
+		 for (let x=0; x<red.length; x=x+1) {
+		 	red[x].onclick = function () {
+		 		red[x].style.backgroundImage = "url(redkrest.avif)"
+		 		red[x].style.backgroundSize = "100% 100%"
+		 		attempts=attempts-1
+				document.querySelector(".attempts").innerHTML = attempts
+
+				if (attempts==0) {
+					alert("ГЕЙ мовер")
+				}
+		 	}
+		 }
+
+		 for (let x=0; x<grn.length; x=x+1) {
+		 	grn[x].onclick = function () {
+		 		grn[x].style.background = "green"
+		 		grn[x].style.backgroundSize = "100% 100%"
+		 		score = score + 1
+		 		document.querySelector(".score").innerHTML = score
+		 		if (score==20) {
+					alert("юв ин")
+				}
+				
+				attempts=attempts-1
+				document.querySelector(".attempts").innerHTML = attempts
+
+				if (attempts==0) {
+					alert("ГЕЙ мовер")
+				}
+		 	}
+
+		 }
+
+
+		 for (let x=0; x<brn.length; x=x+1) {
+		 	brn[x].onclick = function () {
+		 		brn[x].style.background = "brown"
+		 		brn[x].style.backgroundSize = "100% 100%"
+		 		score = score + 1
+		 		document.querySelector(".score").innerHTML = score
+		 		if (score==20) {
+					alert("юв ин")
+				}
+
+				attempts=attempts-1
+				document.querySelector(".attempts").innerHTML = attempts
+
+				if (attempts==0) {
+					alert("ГЕЙ мовер")
+				}
+		 	}
+		 }
+
+		 for (let x=0; x<orn.length; x=x+1) {
+		 	orn[x].onclick = function () {
+		 		orn[x].style.background = "orange"
+		 		orn[x].style.backgroundSize = "100% 100%"
+		 		score = score + 1
+		 		document.querySelector(".score").innerHTML = score
+		 		if (score==20) {
+					alert("юв ин")
+				}
+
+				attempts=attempts-1
+				document.querySelector(".attempts").innerHTML = attempts
+
+				if (attempts==0) {
+					alert("ГЕЙ мовер")
+				}
+		 	}
+		 }
+
+		 for (let x=0; x<blu.length; x=x+1) {
+		 	blu[x].onclick = function () {
+		 		blu[x].style.background = "blue"
+		 		blu[x].style.backgroundSize = "100% 100%"
+		 		score = score + 1
+		 		document.querySelector(".score").innerHTML = score
+		 		if (score==20) {
+					alert("юв ин")
+				}
+
+				attempts=attempts-1
+				document.querySelector(".attempts").innerHTML = attempts
+
+				if (attempts==0) {
+					alert("ГЕЙ мовер")
+				}
+		 	}
+		 }
+
+		 
+	</script>
+
+</body>
+</html>
